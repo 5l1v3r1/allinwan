@@ -30,7 +30,9 @@ echo " 12) Weeman"
 echo " 13) WfDroid"
 echo " 14) FbBrute"
 echo " 15) Ngrok"
-echo " 16) Ga jadi ah keluar aja :v "
+echo " 16) Exploiter SQL Lokomedia"
+echo " 17) Hash Buster"
+echo " 18) Ga jadi ah keluar aja :v "
 read eue
 
 if [ $eue = 1 ] || [ $eue = 01 ]
@@ -245,6 +247,30 @@ echo " Tuh Ngrok nya udah ke install Bos ku :* "
 fi
 
 if [ $eue = 16 ] || [ $eue = 16  ]
+then
+clear
+apt update && apt upgrade
+apt install wget
+apt install php
+mkdir lokmed
+cd ~/lokmed
+wget https://pastebin.com/raw/sPpJRjCZ -O lokmed.php
+chmod 777 lokmed.php
+cd ~/
+echo " Tuh Ngrok nya udah ke install Bos ku :* "
+fi
+
+if [ $eue = 17 ] || [ $eue = 17  ]
+then
+clear
+apt update && apt upgrade
+apt install python2
+apt install git
+git clone https://github.com/UltimateHackers/Hash-Buster
+echo " Tuh Ngrok nya udah ke install Bos ku :* "
+fi
+
+if [ $eue = 18 ] || [ $eue = 18  ]
 then
 echo " Keluar :( "
 sleep 1
